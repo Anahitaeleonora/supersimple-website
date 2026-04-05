@@ -1,0 +1,82 @@
+'<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Galleri – Anahita Eleonora</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet" />
+  
+
+  <script>
+    function toggleMenu() {
+      var menu = document.getElementById("dropdown-menu");
+      if (menu.style.display === "block") {
+        menu.style.display = "none";
+      } else {
+        menu.style.display = "block";
+      }
+    }
+  </script>
+ 
+
+<link rel="stylesheet" href="styles.css" />
+
+</head>
+<body>
+  <header>
+    <h1><a href="index.html" style="text-decoration: none; color: inherit;">Anahita Eleonora</a></h1>
+    <nav>
+      <button class="menu-button" onclick="toggleMenu()">MENY ▾</button>
+      <div id="dropdown-menu" class="menu">
+        <a href="index.html">HJEM</a>
+        <a href="gallery.html">GALLERI</a>
+        <a href="om.html">OM</a>
+        <a href="index.html#kontakt">KONTAKT</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Galleri</h2>
+      <div class="gallery-grid">
+        <a href="okidoki.html" data-title="Kunstverk 1">
+          <img src="okidoki.jpg" alt="Kunstverk 1" />
+        </a>
+        <a href="Braco.html" data-title="kunstverk 2">
+          <img src="Braco.jpg" alt="Kunstverk 2" />
+        </a>
+        <a href="skisser.html" alt="galleri" data-title="Kunstverk 3">
+          <img src="skisser.jpg" alt="Kunstverk 3" />
+        </a>
+        <a href="guitarbraco.html">
+          <img src="guitarbraco.jpg" alt="Kunstverk 7">
+        </a>
+        <a href="guitar.html" data-title="Kunstverk 5">
+            <img src="guitar.JPG" alt="Kunstverk 5" />
+
+        <a href="print.html" data-title="Kunstverk 6">
+            <img src="print.JPG" alt="Kunstverk 6" />
+
+        <a href="Distant.html">
+            <img src="distant.jpg" alt="Kunstverk 7">
+
+        <a href="sister.html" data-title="Kunstverk 8">
+            <img src="sister.jpg" alt="Kunstverk 8" />
+
+      
+        
+    
+     
+       </a>
+        <!-- Legg til flere bilder her -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Anahita Eleonora
+  </footer>
+</body>
+</html>
+

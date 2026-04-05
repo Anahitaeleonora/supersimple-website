@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Anahita Eleonora</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+  
+  <script>
+    function toggleMenu() {
+      var menu = document.getElementById('dropdown-menu');
+      if (menu.style.display === 'block') {
+        menu.style.display = 'none';
+      } else {
+        menu.style.display = 'block';
+      }
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <nav>
+      <button class="menu-button" onclick="toggleMenu()">MENY ▾</button>
+      <div id="dropdown-menu" class="menu">
+        <a href="#hjem">HJEM</a>
+        <a href="gallery.html">GALLERI</a>
+        <a href="om.html">OM</a>
+        <a href="#kontakt">KONTAKT</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hjem" class="hero">
+      <h2>ANAHITA ELEONORA</h2>
+      <p>
+        Anahita er en kunstner med persiske og norske røtter, oppvokst i Alver kommune på Vestlandet. I maleriene hennes utforsker hun farger og rytmer og forteller ulike historier fra forskjellige kulturer. Den gylne tråden i arbeidet hennes er jordfargene som ligger for grunn selvom tematikken ofte er mellom meneskelige relasjoner og figurative sener. Bildene forteller historier om en rytme og nærhet som står i kontrast til det vestlige samfunnets resultatorienterte og prestasjonsdrevne tempo.
+      </p>
+      <img src="forside1.jpg" alt="Kunstverk av Anahita Eleonora" />
+    </section>
+
+    <section id="galleri">
+      <h2>Galleri</h2>
+      <div class="gallery-grid">
+        <img src="Braco.jpg" alt="Kunstverk 1" />
+        <img src="okidoki.jpg" alt="Kunstverk 2" />
+        <img src="skisser.jpg" alt="Kunstverk 3" />
+          
+          
+        
+        
+      </div>
+    </section>
+
+    <!-- <section id="om">
+      <h2>Om</h2>
+      <img
+        src="anahita.jpg"
+        alt="Bilde av Anahita Eleonora"
+        style="max-width: 100%; border: 1px solid #ccc; margin-bottom: 1rem"
+      />
+      <p>[Skriv inn biografien din her]</p>
+    </section> -->
+
+    <section id="kontakt">
+      <h2>Kontakt</h2>
+      <p>  
+    </section>
+
+  </main>
+  <div class="contact-buttons">
+    <a href="mailto:atalmatal31@yahoo.no" class="contact-btn">E-POST</a>
+    <a href="https://www.instagram.com/anahitaeleonora/" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       class="contact-btn">
+       INSTAGRAM
+    </a>
+  </div>
+  
+  <footer>&copy; 2025 Anahita Eleonora</footer>
+</body>
+</html>
+

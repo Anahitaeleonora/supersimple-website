@@ -1,0 +1,145 @@
+    
+    body {
+      font-family: 'Cormorant Garamond', serif;
+      margin: 0;
+      padding: 0;
+      background: #fdf6ef;
+      color: #444444;
+      line-height: 1.7;
+      scroll-behavior: smooth;
+      .contact-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin: 3rem 0 2rem;
+      }
+      
+      .contact-btn {
+        font-family: 'Cormorant Garamond', serif;
+        text-decoration: none;
+        padding: 0.8rem 1.6rem;
+        border: 1px solid #000;
+        color: #000;
+        letter-spacing: 1px;
+        transition: all 0.3s ease;
+      }
+      
+      .contact-btn:hover {
+        background-color: #000;
+        color: #fff;
+      }
+      
+
+
+    }
+    header {
+      background: #f8f1e9;
+      padding: 3rem 1rem;
+      text-align: center;
+      position: relative;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+      letter-spacing: 1px;
+    }
+    nav {
+      position: absolute;
+      top: 1.5rem;
+      right: 1.5rem;
+    }
+    .menu-button {
+      background: none;
+      border: none;
+      font-size: 1.2rem;
+      cursor: pointer;
+      font-family: 'Cormorant Garamond', serif;
+      text-transform: uppercase;
+    }
+    .menu {
+      display: none;
+      position: absolute;
+      top: 3rem;
+      right: 1.5rem;
+      background: #fdf6ef;
+      border: 1px solid #ccc;
+      padding: 1rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .menu a {
+      display: block;
+      margin-bottom: 0.5rem;
+      text-decoration: none;
+      color: #555;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+    .menu a:hover {
+      text-decoration: underline;
+    }
+    main {
+      max-width: 750px;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
+      text-align: center;
+    }
+    section {
+      margin-bottom: 4rem;
+    }
+    .hero h2 {
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+      letter-spacing: 2px;
+    }
+    .hero img {
+      max-width: 100%;
+      height: auto;
+      border: 1px solid #ccc;
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+    .gallery-grid img {
+      width: 100%;
+      height: auto;
+      border: 1px solid #ccc;
+    }
+    footer {
+      background: #f8f1e9;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.95rem;
+    }
+    a {
+      color: #444;
+    }
+    a:hover {
+      color: #000;
+    }
+    .contact-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin: 3rem 0 2rem;
+    }
+    
+    .contact-btn {
+      font-family: 'Cormorant Garamond', serif;
+      text-decoration: none;
+      padding: 0.8rem 1.6rem;
+      border: 1px solid #000;
+      color: #000;
+      letter-spacing: 1px;
+      transition: all 0.3s ease;
+    }
+    
+    .contact-btn:hover {
+      background-color: #000;
+      color: #fff;
+    }
+
+   
+    
+    

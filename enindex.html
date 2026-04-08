@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Anahita Eleonora</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+  
+  <style>
+    /* Språkvelger stil */
+    .lang-simple {
+      font-family: 'Helvetica Neue', sans-serif;
+      font-weight: 300;
+      font-size: 14px;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      z-index: 1000; /* alltid synlig over header/nav */
+    }
+
+    .lang-simple a {
+      color: #333;
+      text-decoration: none;
+      margin: 0 4px;
+      transition: color 0.3s;
+    }
+
+    .lang-simple a:hover {
+      color: #111;
+    }
+  </style>
+
+  <script>
+    function toggleMenu() {
+      var menu = document.getElementById('dropdown-menu');
+      if (menu.style.display === 'block') {
+        menu.style.display = 'none';
+      } else {
+        menu.style.display = 'block';
+      }
+    }
+  </script>
+</head>
+<body>
+
+  <!-- Språkvelger oppe til venstre -->
+  <div class="lang-simple">
+    <a href="index.html">NO</a> | <a href="enindex.html">EN</a>
+  </div>
+
+  <header>
+    <nav>
+      <button class="menu-button" onclick="toggleMenu()">MENU ▾</button>
+      <div id="dropdown-menu" class="menu">
+        <a href="#hjem">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="enom.html">About</a>
+        <a href="#kontakt">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hjem" class="hero">
+      <h2>ANAHITA ELEONORA</h2>
+      <p>
+        Anahita is an artist of Persian and Norwegian heritage, raised in Alver on Norway’s west coast. Her paintings capture intimate, close encounters between people, exploring the body, gaze, and human connection. Using subtle, earthy tones, her work draws inspiration from Cubism and invites viewers to find their own meaning in each piece.
+      </p>
+      <img src="forside1.jpg" alt="Kunstverk av Anahita Eleonora" />
+    </section>
+
+    <section id="galleri">
+      <h2>Gallery</h2>
+      <div class="gallery-grid">
+        <img src="Braco.jpg" alt="Kunstverk 1" />
+        <img src="okidoki.jpg" alt="Kunstverk 2" />
+        <img src="skisser.jpg" alt="Kunstverk 3" />
+      </div>
+    </section>
+
+    <!-- <section id="om">
+      <h2>Om</h2>
+      <img
+        src="anahita.jpg"
+        alt="Bilde av Anahita Eleonora"
+        style="max-width: 100%; border: 1px solid #ccc; margin-bottom: 1rem"
+      />
+      <p>[Skriv inn biografien din her]</p>
+    </section> -->
+
+    <section id="kontakt">
+      <h2>Contact</h2>
+      <p></p>
+    </section>
+
+  </main>
+
+  <div class="contact-buttons">
+    <a href="mailto:atalmatal31@yahoo.no" class="contact-btn">
+        E-MAIL
+    </a>
+    <a href="https://www.instagram.com/anahitaeleonora/" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       class="contact-btn">
+       INSTAGRAM
+    </a>
+  </div>
+  
+  <footer>&copy; 2025 Anahita Eleonora</footer>
+  
+</body>
+</html>

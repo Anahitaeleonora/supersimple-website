@@ -21,7 +21,34 @@
     }
   </script>
 </head>
+<style>
+  .lang-simple {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1000; /* alltid synlig over header/nav */
+  }
+  
+  .lang-simple a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 4px;
+    transition: color 0.3s;
+  }
+  
+  .lang-simple a:hover {
+    color: #111;
+  }
+  </style>
 <body>
+    <!-- Språkvelger -->
+  <div class="lang-simple">
+    <a href="index.html">NO</a> | <a href="enindex.html">EN</a>
+  </div>
+    
   <header>
     <nav>
       <button class="menu-button" onclick="toggleMenu()">MENY ▾</button>

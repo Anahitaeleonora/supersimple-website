@@ -1,68 +1,62 @@
 <!DOCTYPE html>
 <html lang="no">
+
 <head>
-    <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Om – Anahita Eleonora</title>
+
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
-  <script>
-    function toggleMenu() {
-      var menu = document.getElementById("dropdown-menu");
-      menu.style.display = menu.style.display === "block" ? "none" : "block";
-    }
-  </script>
 </head>
-<style>
-  .lang-simple {
-    font-family: 'Helvetica Neue', sans-serif;
-    font-weight: 300;
-    font-size: 14px;
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    z-index: 1000; /* alltid synlig over header/nav */
-  }
-  
-  .lang-simple a {
-    color: #333;
-    text-decoration: none;
-    margin: 0 4px;
-    transition: color 0.3s;
-  }
-  
-  .lang-simple a:hover {
-    color: #111;
-  }
-  </style>
-<body> 
-      <!-- Språkvelger -->
+
+<body>
+
+  <!-- Språkvelger -->
   <div class="lang-simple">
     <a href="om.html">NO</a> | <a href="enom.html">EN</a>
   </div>
-  
-
-  <header>
-    <nav>
-      <button class="menu-button" onclick="toggleMenu()">MENY ▾</button>
-      <div id="dropdown-menu" class="menu">
-        <a href="index.html#hjem">HJEM</a>
-        <a href="index.html#galleri">GALLERI</a>
-        <a href="om.html">OM</a>
-        <a href="index.html#kontakt">KONTAKT</a>
-      </div>
-    </nav>
-  </header>
 
   <main>
-    <h2>Om Anahita Eleonora</h2>
-    <img src="steming.jpg" alt="Bilde av Anahita Eleonora" style="max-width: 100%; border: 1px solid #ccc; margin-bottom: 1rem;">
-    <p>Anahita er en 24 år gammel jente som alltid har drevet med kunst i ulike former. Likevel valgte hun en mer teoretisk studieretning og startet på sivilingeniør studiet fordi hun tenkte at det ville være vannskelig å leve av kunsten. Selvom hun møtte flere nære venner på studiet og mange likesinnede så manglet hun et sted hvor hun kunne utrykke sin kunstersike side. Midt i studiene tok hun derfor et år fri for å reise til Latin-Amerika. Oppholdet, og spesielt tiden i Mexico, satte dype spor i både hennes indre liv og kreativitet, og ga ny retning til kunsten hennes. </p>
+
+    <section class="hero">
+
+      <div class="header-box">
+
+        <h2>
+          <a href="index.html" style="text-decoration:none; color:inherit;">
+            ANAHITA ELEONORA
+          </a>
+        </h2>
+
+        <nav class="top-nav">
+          <a href="index.html">HJEM</a>
+          <a href="gallery.html">GALLERI</a>
+          <a href="om.html">OM</a>
+          <a href="index.html#kontakt">KONTAKT</a>
+          <a href="#prints">PRINTS</a>
+        </nav>
+
+      </div>
+
+    
+
+      <img src="steming.jpg"
+           alt="Bilde av Anahita Eleonora"
+           style="max-width: 100%; border: 1px solid #ccc; margin-bottom: 1rem;">
+
+      <p>
+        Anahita er en 24 år gammel jente som alltid har drevet med kunst i ulike former. Likevel valgte hun en mer teoretisk studieretning og startet på sivilingeniør studiet fordi hun tenkte at det ville være vannskelig å leve av kunsten. Selvom hun møtte flere nære venner på studiet og mange likesinnede så manglet hun et sted hvor hun kunne utrykke sin kunstersike side. Midt i studiene tok hun derfor et år fri for å reise til Latin-Amerika. Oppholdet, og spesielt tiden i Mexico, satte dype spor i både hennes indre liv og kreativitet, og ga ny retning til kunsten hennes
+      </p>
+
+    </section>
+
   </main>
 
   <footer>
     &copy; 2025 Anahita Eleonora
   </footer>
+
 </body>
 </html>
 

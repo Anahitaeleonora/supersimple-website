@@ -1,32 +1,145 @@
 <!DOCTYPE html>
 <html lang="no">
+
 <head>
   <meta charset="UTF-8" />
-  <title>- Guitar Braco</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Guitar Braco – Anahita Eleonora</title>
+
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+
+  <style>
+    .art-page {
+      display: flex;
+      gap: 2.5rem;
+      align-items: flex-start;
+      margin-top: 2rem;
+    }
+
+    /* BILDER SIDE BY SIDE */
+    .art-images {
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+      flex-shrink: 0;
+    }
+
+    .art-images img {
+      height: 420px;
+      width: auto;
+      border: 1px solid #ccc;
+    }
+
+    /* TEKST */
+    .art-info {
+      max-width: 320px;
+    }
+
+    .art-title {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    .art-info p {
+      margin: 0.5rem 0;
+      line-height: 1.6;
+    }
+
+    .purchase-btn {
+      display: inline-block;
+      margin-top: 1.5rem;
+      padding: 0.8rem 1.6rem;
+      background-color: #ffffff;
+      color: #000000;
+      border: 1px solid #000000;
+      text-decoration: none;
+      font-family: 'Cormorant Garamond', serif;
+      letter-spacing: 1px;
+      transition: all 0.3s ease;
+    }
+
+    .purchase-btn:hover {
+      background-color: #000000;
+      color: #ffffff;
+    }
+
+    @media (max-width: 768px) {
+      .art-page {
+        flex-direction: column;
+      }
+
+      .art-images {
+        flex-direction: column;
+      }
+
+      .art-images img {
+        height: auto;
+        width: 100%;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <header>
-    <h1>Braco</h1>
-    <nav>
-      <a href="galleri.html">← Tilbake til galleriet</a>
-    </nav>
-  </header>
 
   <main>
-    <img src="Braco.jpg" alt= "A Man" style="max-width: 100%; height: auto; border: 1px solid #ccc; margin-bottom: 2rem;" />
-    <img src="Braco2.jpg" alt= "A Man" style="max-width: 100%; height: auto; border: 1px solid #ccc; margin-bottom: 2rem;" />
-    
-    <p><strong>Størrelse:</strong> 70 × 50 cm</p>
-    <p><strong>Pris:</strong> pris kommer</p>
-    <p><strong>Teknikk:</strong> Akryl på lerret</p>
-    <p><strong>Beskrivelse:</strong> En ung man med spennende fremtid.</p>
+
+    <section class="hero">
+
+      <div class="header-box">
+
+        <h2>
+          <a href="index.html" style="text-decoration:none; color:inherit;">
+            ANAHITA ELEONORA
+          </a>
+        </h2>
+
+        <nav class="top-nav">
+          <a href="index.html">HOME</a>
+          <a href="gallery.html">GALLERY</a>
+          <a href="om.html">ABOUT</a>
+          <a href="index.html#kontakt">CONTACT</a>
+        </nav>
+
+      </div>
+
+      <div class="art-page">
+
+        <!-- IMAGES -->
+        <div class="art-images">
+
+          <img src="Braco.jpg" alt="Braco">
+          <img src="Braco2.jpg" alt="Braco detail">
+
+        </div>
+
+        <!-- INFO -->
+        <div class="art-info">
+
+          <div class="art-title">Guitar Braco</div>
+
+          <p><strong>Size:</strong> 70 × 50 cm</p>
+          <p><strong>Price:</strong> 20 000 NOK</p>
+          <p><strong>Technique:</strong> Acrylic on canvas</p>
+          <p><strong>Description:</strong> Young man.</p>
+
+          <a href="Purchase.html" class="purchase-btn">PURCHASE</a>
+
+        </div>
+
+      </div>
+
+    </section>
+
   </main>
 
   <footer>
-    <p>© 2025 Kunstnettsiden</p>
+    &copy; 2025 Anahita Eleonora
   </footer>
+
 </body>
 </html>
 

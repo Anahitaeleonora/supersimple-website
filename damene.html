@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Night in Cobano – Anahita Eleonora</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <style>
+    .art-page {
+      display: flex;
+      gap: 2.5rem;
+      align-items: flex-start;
+      margin-top: 2rem;
+    }
+
+    .art-page img {
+      width: 55%;
+      height: auto;
+      border: 1px solid #ccc;
+    }
+
+    .art-info {
+      width: 45%;
+    }
+
+    .art-title {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      letter-spacing: 1px;
+    }
+
+    .art-info p {
+      margin: 0.5rem 0;
+      line-height: 1.6;
+    }
+
+    /* mobil */
+    @media (max-width: 768px) {
+      .art-page {
+        flex-direction: column;
+      }
+
+      .art-page img,
+      .art-info {
+        width: 100%;
+      }
+    }
+  </style>
+  <link rel="icon" type="image/png" href="favicon.png" />
+</head>
+
+<body>
+
+  <main>
+
+    <section class="hero">
+
+      <!-- HEADER -->
+      <div class="header-box">
+
+        <h2>
+          <a href="enindex.html" style="text-decoration:none; color:inherit;">
+            ANAHITA ELEONORA
+          </a>
+        </h2>
+
+        <nav class="top-nav">
+          <a href="enindex.html">HOME</a>
+          <a href="engallery.html">GALLERY</a>
+          <a href="enom.html">ABOUT</a>
+          <a href="enindex.html#kontakt">CONTACT</a>
+        </nav>
+
+      </div>
+
+      <!-- ART CONTENT -->
+      <div class="art-page">
+
+        <!-- IMAGE -->
+        <img src="damene.JPG" alt="Night in Oaxaca">
+
+        <!-- INFO -->
+        <div class="art-info">
+
+          <div class="art-title" style="font-weight: 700;">
+            Night in Cobano
+          </div>
+
+          <p><strong>Size:</strong> 70 × 100 cm</p>
+          <p><strong>Price:</strong> Avaliable at exhibition 17. of july </p>
+          <p><strong>Technique:</strong> Acrylic on canvas</p>
+          
+
+          <a href="Purchase.html" class="purchase-btn">PURCHASE</a>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    &copy; 2025 Anahita Eleonora
+  </footer>
+
+</body>
+</html>

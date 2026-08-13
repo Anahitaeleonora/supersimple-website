@@ -399,5 +399,154 @@ footer {
   }
 
 }
-    
+
+/* =========================
+   PREVIOUS EXHIBITION
+========================= */
+
+.exhibition-slider {
+  padding: 0 40px 100px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.previous-exhibition-header {
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.previous-exhibition-header h2 {
+  margin: 0;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #999;
+  text-align: center;
+}
+
+.exhibition-type {
+  margin-top: 8px;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  letter-spacing: 0.15em;
+  color: #555;
+  text-align: center;
+}
+
+
+/* =========================
+   SLIDER
+========================= */
+
+.slider {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.slider-window {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.5s ease;
+  touch-action: pan-y;
+}
+
+.slider-track img {
+  width: 100%;
+  flex: 0 0 100%;
+  display: block;
+  max-height: 700px;
+  object-fit: contain;
+}
+
+
+/* =========================
+   PILER
+========================= */
+
+.slider-arrow {
+  background: none;
+  border: none;
+  padding: 5px;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  color: #555;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: opacity 0.3s ease;
+}
+
+.slider-arrow:hover {
+  opacity: 0.4;
+}
+
+
+/* =========================
+   BILDETELLER
+========================= */
+
+.slider-counter {
+  text-align: center;
+  margin-top: 18px;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  color: #555;
+}
+
+
+/* =========================
+   MOBIL
+========================= */
+
+@media (max-width: 700px) {
+
+  .exhibition-slider {
+    padding: 0 20px 70px;
+  }
+
+  .previous-exhibition-header {
+    margin-bottom: 20px;
+  }
+
+  .previous-exhibition-header h2 {
+    font-size: 12px;
+    letter-spacing: 4px;
+  }
+
+  .exhibition-type {
+    font-size: 12px;
+    letter-spacing: 0.15em;
+  }
+
+  .slider {
+    gap: 5px;
+  }
+
+  .slider-arrow {
+    font-size: 20px;
+    padding: 4px;
+  }
+
+  .slider-track img {
+    max-height: 500px;
+  }
+
+}
+.exhibition-slider + #galleri {
+  margin-top: -60px;
+}
+
+#galleri .section-label {
+  text-align: center;
+}
+
     

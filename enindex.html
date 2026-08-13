@@ -1,70 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="no">
 <head>
   <link rel="stylesheet" href="styles.css" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <title>Anahita Eleonora</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
 
-  <style>
-    .lang-simple {
-      font-family: 'Helvetica Neue', sans-serif;
-      font-weight: 300;
-      font-size: 14px;
-      position: absolute;
-      top: 20px;
-      left: 20px;
-      z-index: 1000;
-    }
-
-    .lang-simple a {
-      color: #333;
-      text-decoration: none;
-      margin: 0 4px;
-    }
-
-    .lang-simple a:hover {
-      color: #111;
-    }
-  </style>
   <link rel="icon" type="image/png" href="favicon.png" />
+
+  
 </head>
+
 
 <body>
 
-  <!-- Language switch -->
+  <!-- Språkvelger -->
   <div class="lang-simple">
-    <a href="index.html">NO</a> | <a href="enindex.html">EN</a>
+    <a href="index.html">NO</a> |
+    <a href="enindex.html">EN</a>
   </div>
+
 
   <main>
 
+    <!-- =========================
+         HERO
+    ========================== -->
+
     <section class="hero">
 
-      <!-- HEADER (samme som resten av siden din) -->
       <div class="header-box">
 
-        <h2>
-          <a href="enindex.html" style="text-decoration:none; color:inherit;">
-            ANAHITA ELEONORA
-          </a>
-        </h2>
+        <h2>ANAHITA ELEONORA</h2>
 
         <nav class="top-nav">
-          <a href="enindex.html">HOME</a>
-          <a href="engallery.html">GALLERY</a>
-          <a href="enom.html">ABOUT</a>
-          <a href="enindex.html#kontakt">CONTACT</a>
+          <a href="index.html">HOME</a>
+          <a href="gallery.html">GALLERY</a>
+          <a href="om.html">ABOUT</a>
+          <a href="#kontakt">CONTACT</a>
           <a href="printsite.html">PRINTS</a>
         </nav>
 
       </div>
 
-      <!-- HERO -->
-      <img src="forside5.jpg" alt="Artwork by Anahita Eleonora" />
+
+      <img
+        src="forside2.jpg"
+        alt="Kunstverk av Anahita Eleonora"
+      />
 
       <p>
         Anahita is an artist of Persian and Norwegian heritage, raised in Alver on Norway’s west coast. Her paintings capture intimate, close encounters between people, exploring the body, gaze, and human connection. Using subtle, earthy tones, her work draws inspiration from Cubism and invites viewers to find their own meaning in each piece.
@@ -72,59 +61,276 @@
 
     </section>
 
-    <!-- GALLERY PREVIEW -->
+
+    
+
+    <!-- =========================
+         BILDER FRA UTSTILLINGEN
+    ========================== -->
+
+    <section class="exhibition-slider">
+
+        <div class="previous-exhibition-header">
+    
+      
+          <h2> My trip to Mexico </h2>
+      
+          <p class="exhibition-type">Solo exhibition, 2026</p>
+      
+        </div>
+      
+      
+        <div class="slider">
+      
+          <button
+            class="slider-arrow prev"
+            aria-label="Forrige bilde"
+          >
+            &lt;
+          </button>
+      
+      
+          <div class="slider-window">
+      
+            <div class="slider-track">
+
+             
+      
+              <img
+                src="utstilling1.jpg"
+                alt="Verk fra utstillingen My trip to Mexico"
+              />
+      
+              <img
+                src="utstilling2.jpg"
+                alt="Verk fra utstillingen My trip to Mexico"
+              />
+      
+              <img
+                src="utstilling3.jpg"
+                alt="Verk fra utstillingen My trip to Mexico"
+              />
+      
+              <img
+                src="utstilling4.jpg"
+                alt="Verk fra utstillingen My trip to Mexico"
+              />
+      
+              <img
+                src="utstilling5.jpg"
+                alt="Verk fra utstillingen My trip to Mexico"
+              />
+              
+      
+            </div>
+      
+          </div>
+      
+      
+          <button
+            class="slider-arrow next"
+            aria-label="Neste bilde"
+          >
+            &gt;
+          </button>
+      
+        </div>
+      
+      
+        <p class="slider-counter">
+          <span id="current-slide">1</span> / 5
+        </p>
+      
+      </section>
+
+    <!-- =========================
+         GALLERI
+    ========================== -->
+
     <section id="galleri">
 
-      <h2>Gallery</h2>
-
-      <div class="gallery-grid gallery-grid-home">
-        <img src="Braco.jpg" alt="Artwork 1" />
-        <img src="okidoki.jpg" alt="Artwork 2" />
-        <img src="skisser.jpg" alt="Artwork 3" />
-      </div>
-
-    </section>
-    <section class="exhibition">
-      <div class="exhibition-content">
-    
-        <div class="exhibition-left">
-          <p class="section-label">PREVIOUS EXHIBITION</p>
-    
-    
-          <p class="exhibition-details">
-            Blom<br>
-            17. july 2026<br>
-            19.00
-          </p>
-          <h2 class="poster-title">My trip to Mexico</h2>
+        <p class="section-label">Gallery</p>
+  
+        <div class="gallery-grid gallery-grid-home">
+  
+          <img
+            src="Braco.jpg"
+            alt="Kunstverk 1"
+          />
+  
+          <img
+            src="okidoki.jpg"
+            alt="Kunstverk 2"
+          />
+  
+          <img
+            src="skisser.jpg"
+            alt="Kunstverk 3"
+          />
+  
         </div>
-    
-        <div class="exhibition-image">
-          <img src="poster.JPG" alt="Plakat" />
-        </div>
-    
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="kontakt">
-      <h2>Contact</h2>
-    </section>
-<!-- CONTACT BUTTONS -->
-<div class="contact-buttons">
-  <a href="mailto:atalmatal31@yahoo.no" class="contact-btn">E-MAIL</a>
-  <a href="https://www.instagram.com/anahitaeleonora/"
-     target="_blank"
-     rel="noopener noreferrer"
-     class="contact-btn">
-    INSTAGRAM
-  </a>
-</div>
-  </main>
-
+  
+      </section>
   
 
-  <footer>&copy; 2025 Anahita Eleonora</footer>
+
+    <!-- =========================
+         KONTAKT
+    ========================== -->
+
+    <section id="kontakt">
+
+      
+
+    </section>
+
+
+    <div class="contact-buttons">
+
+      <a
+        href="mailto:atalmatal31@yahoo.no"
+        class="contact-btn"
+      >
+        E-POST
+      </a>
+
+
+      <a
+        href="https://www.instagram.com/anahitaeleonora/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="contact-btn"
+      >
+        INSTAGRAM
+      </a>
+
+    </div>
+
+  </main>
+
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+
+  <footer>
+    &copy; 2025 Anahita Eleonora
+  </footer>
+
+
+  <!-- =========================
+       SLIDER JAVASCRIPT
+  ========================== -->
+
+  <script>
+
+    const track = document.querySelector('.slider-track');
+    const slides = document.querySelectorAll('.slider-track img');
+
+    const nextButton = document.querySelector('.next');
+    const prevButton = document.querySelector('.prev');
+
+    const currentSlide =
+      document.getElementById('current-slide');
+
+    let currentIndex = 0;
+
+
+    /* =========================
+       OPPDATER SLIDER
+    ========================== */
+
+    function updateSlider() {
+
+      track.style.transform =
+        `translateX(-${currentIndex * 100}%)`;
+
+      currentSlide.textContent =
+        currentIndex + 1;
+
+    }
+
+
+    /* =========================
+       NESTE BILDE
+    ========================== */
+
+    nextButton.addEventListener('click', () => {
+
+      currentIndex++;
+
+      if (currentIndex >= slides.length) {
+        currentIndex = 0;
+      }
+
+      updateSlider();
+
+    });
+
+
+    /* =========================
+       FORRIGE BILDE
+    ========================== */
+
+    prevButton.addEventListener('click', () => {
+
+      currentIndex--;
+
+      if (currentIndex < 0) {
+        currentIndex = slides.length - 1;
+      }
+
+      updateSlider();
+
+    });
+
+
+    /* =========================
+       SVEIPING PÅ MOBIL
+    ========================== */
+
+    let startX = 0;
+    let endX = 0;
+
+
+    track.addEventListener('touchstart', (event) => {
+
+      startX = event.touches[0].clientX;
+
+    });
+
+
+    track.addEventListener('touchend', (event) => {
+
+      endX = event.changedTouches[0].clientX;
+
+      const difference = startX - endX;
+
+
+      /* Bare registrer et sveip
+         dersom fingeren flyttes
+         mer enn 50px */
+
+      if (Math.abs(difference) > 50) {
+
+        if (difference > 0) {
+
+          // Sveip til venstre
+          nextButton.click();
+
+        } else {
+
+          // Sveip til høyre
+          prevButton.click();
+
+        }
+
+      }
+
+    });
+
+  </script>
+
 
 </body>
 </html>
